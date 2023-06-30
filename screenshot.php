@@ -7,7 +7,7 @@ use Telegram\Bot\Api;
 
 // Mengambil screenshot menggunakan PhantomJS
 $client = Client::getInstance();
-$client->getEngine()->setPath('path/ke/phantomjs');
+$client->getEngine()->setPath('/0chabonchu/random/vendor/jonnyw/php-phantomjs');
 $request = $client->getMessageFactory()->createCaptureRequest('https://s.id/agent18', 'GET');
 $response = $client->getMessageFactory()->createResponse();
 $client->send($request, $response);
